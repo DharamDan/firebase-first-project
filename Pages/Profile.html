@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../Css/Profile.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+
+<script src="../Js/Firebase.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="picture-container">
+                <div class="picture" id="container-sm">
+                    <img  id="wizardPicturePreview" >
+                    <input type="file"  class="" value="" onchange="profile(event)">
+                </div>
+               
+        
+        
+            </div>
+        </div>
+      <div class="name" id="FirstName2"></div>
+      <div class="career" id="select2"></div>
+      <hr class="horizon" />
+      <button class="about">About Me</button>
+      <div class="info">
+       
+        <p>MobNumber: <input type="number" id="MobNumber"></p>
+        <p>Password: <input type="password" id="Password"></p>
+        <p>CNIC: <input type="number" id="CNIC">  </p>
+        <p></p>
+      </div>
+      <button class="flow" onclick="update()">Save</button>
+      <div class="social-icons">
+        <a href="??" target="_blank" class="fb"
+          ></a>
+        <a href="??" target="_blank" class="messenger"
+          ><i class="fab fa-facebook-messenger"></i
+        ></a>
+        <a href="??" target="_blank" class="insta"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="??" target="_blank" class="telegram"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
+        <a href="??" target="_blank" class="email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </div>
+
+    <script src="../Js/Profile.js"></script>
+  </body>
+</html>

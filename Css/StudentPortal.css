@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbardiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #762397;
+    height: auto;
+    top: 0;
+    width: 100%;
+    
+   
+    
+
+
+}
+.logo{
+  padding: 7px;
+}
+.logo img{
+   height: 14%;
+   width: 14%;
+}
+#newdiv1{
+    background-color: #fae6ff;
+    min-height: 100vh;
+} 
+#newdiv1 h1{
+    font-family: "Bree Serif",serif!important;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: #663399;
+   
+}
+.newdiv2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+  
+    
+}
+.headingdiv{
+
+    background-color: #e1e3e7;
+    padding: 15px;
+
+}
+.headingdiv h2{
+    padding-left: 10px;
+}
+.newdiv3{
+  background-color: #fff;
+    padding: 20px;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+  
+    text-align: center;
+    width: 300px;
+    padding: 12px;
+  }
+  #tr1{
+    border: 1px solid #dddddd;
+  }
+  #tr2{
+    border: 1px solid #dddddd;
+  }
+  .one{
+    color: #663399;
+  }
+  .paradiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .paradiv p{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+  .twodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .onediv{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .onediv img{
+    height: 12%;
+    width: 12%;
+  }
+  .threediv img{
+    height: 20%;
+    width: 20%;
+  }
+  span{
+    text-align: end;
+  }
+  p{
+    text-align: center;
+    font-size: 20px;
+    font-family: prata;
+    color: #663399;
+    padding-top: 25px;
+    font-weight: bold;
+  }
+  .filediv{
+    border: 1px  solid #dddddd;
+    border-style: dotted;
+    background-color: #dddddd;
+    
+  }
+  .picture-container{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.picture{
+    width: 500px;
+    height: 80px;
+    background-color: #e1e3e7;
+    border: 2px dotted #CCCCCC;
+    color: #FFFFFF;
+    margin: 0px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    padding-top: 15px;
+}
+.picture:hover{
+    border-color: #2ca8ff;
+}
+.content.ct-wizard-green .picture:hover{
+    border-color: #05ae0e;
+}
+.content.ct-wizard-blue .picture:hover{
+    border-color: #3472f7;
+}
+.content.ct-wizard-orange .picture:hover{
+    border-color: #ff9500;
+}
+.content.ct-wizard-red .picture:hover{
+    border-color: #ff3b30;
+}
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.picture-src{
+    width: 100%;
+    
+}
+#wizardPicturePreview{
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+}
+.para1{
+  color: rgba(255, 0, 0, 0.425);
+}
+.newpara{
+  font-family: prata;
+  color: #639;
+}
+.fileimg{
+  height: 35px;
+  width: 35px;
+}
+h2{
+  font-size: 13px;
+  color: #000;
+}
+.receiptbutton  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.receiptbutton button{
+text-align: center;
+  background-color: #e1e3e7;
+  color: #639;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 2px -2px grey;
+  padding: 7px 10px;
+  
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-family: prata;
+  padding-right: 20px;
+}
+
+
+@media only screen and (max-width:992px){
+  #newdiv1 h1{
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width:785px){
+  .newdiv2{
+    padding: 0px;
+  }
+  td,th{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:500px){
+  #newdiv1 h1{
+    font-size: 14px;
+  }
+  .picture{
+    width: 300px;
+  }
+ .twodiv span{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width:450px){
+ .newdiv3{
+  padding: 0px;
+ }
+ .para1{
+  font-size: 10px;
+ }
+ td,th{
+  font-size: 8px;
+ }
+ .paradiv p {
+  font-size: 10px;
+ }
+ table{
+  width: 300px;
+ }
+ .newdiv3{
+  padding-left: 25px;
+ }
+ 
+  
+}
+@media only screen and (max-width:390px){
+  table{
+    width: 200px;
+  }
+  .logo img{
+    width: 25%;
+  }
+}
+@media only screen and (max-width:372px){
+  table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .newdiv3{
+    padding: 0px;
+  }
+  #newdiv1 h1{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:320px){
+  .picture{
+    width: 250px;
+  }
+  table{
+    width: 100px;
+    
+  }
+
+}
+
+
+
+
+

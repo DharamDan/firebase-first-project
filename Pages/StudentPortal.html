@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/StudentPortal.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    
+    <script src="../Js/Firebase.js"></script>
+</head>
+<body>
+
+    <header id="navbardiv">
+        <div class="logo">
+            <img src="../Images/iskillers.png" alt=""> 
+        </div>
+        <ul>
+            <li><a href="../Pages/Profile.html">Profile</a></li>
+        </ul>
+
+        
+    </header>
+    <section id="newdiv1">
+    <h1>WELCOME TO ISKILLERS STUDENTS PORTAL</h1>
+
+    <div class="newdiv2">
+        <div class="headingdiv">
+            <h2 id="select"></h2>
+        </div>
+        <div class="newdiv3">
+            <table>
+                <tr id="tr1">
+                  <th>APPLICANT NAME</th>
+                  <th>FATHER'S NAME</th>
+                  <th>CNIC FORM</th>
+                  <th>COURSES</th>
+                  <th>AMOUNT/RS</th>
+                </tr>
+               
+                <tr id="tr2">
+                    
+                    <th id="FirstName"></th>
+                    <th id="LastName"></th>
+                    <th id="CNIC"></th>
+                    <th  id="select"></th>
+                    <th class="one">2500</th>
+                  </tr>
+                  
+                
+              </table>
+              <div class="paradiv">
+                <p>Pay with Easypaisa, Jazz Cash or below given UBL Bank account.</p>
+              </div>
+              <div class="twodiv">
+                
+                <div class="onediv">
+                    03322511711
+                    <br>
+                    <br>
+                    <img src="../Images/easypaisa-62292730bd0d97ed4ef3ba46a9857e98.png" alt="">
+                </div>
+                <span>Branch Code: 1941</span>
+              </div>            
+            </div>
+            <p class="newpara">Upload your paid receipt here .</p>
+            <p class="para1">Note: Admission fees will not be refund!</p>
+            <br>
+            <div class="container">
+                <div class="picture-container">
+                    <div class="picture" id="container-sm">
+                        <img src="../Images/cloud-download (1).png" alt="" class="fileimg">
+                         <h2>Select photo of the paid receipt </h2>
+                        <input type="file"  class="" value="" onchange="profile(event)">
+                    </div>  
+                  
+                    
+                </div>
+                <div class="receiptbutton">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    <button onclick="update()">Send Receipt</button> 
+                    <p id="message"></p>  
+                </div>
+            </div>
+            </section>
+
+            <script src="../Js/StudentPortal.js"></script>
+    </body>

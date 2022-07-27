@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/EmailVerified.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    
+    <script src="../Js/Firebase.js"></script>
+</head>
+<body>
+
+    <section id="emailverified">
+        <div class="email">
+            <div class="imgdiv">
+            <img src="../Images/message.png" alt="">
+        </div>
+        <h2>Verify your email address</h2>
+        <br>
+        <p>Sharing to start using Zeta we need to Verify your</p>
+        <p class="idpara">email ID  <span id="email1"></span></p>
+        <br>
+        <br>
+        <div class="verifybutton">
+        <button onclick="emailverified()">CLICK TO VERIFY</button>
+        
+    </div>
+    <br>
+    <div class="verifybutton">
+        <button onclick="homepage()">Go TO HomePage</button>
+        
+    </div>
+    <!-- <div class="verifybutton2">
+        <button>Go TO HomePage</button>
+        
+    </div> -->
+        </div>
+
+    </section>
+    <script src="../Js/EmailVerified.js"></script>
+    </body>
